@@ -1,0 +1,23 @@
+
+<form #ProductForm="ngForm" (ngSubmit)="handleSubmit(ProductForm)" >
+Search:<input type="search"  placeholder="Search By Id" name="productId" ngModel >
+<input type="submit" value="Search">
+</form>
+<br><b>{{productId}}</b><br>
+<table border="1px" width="100%">
+    <tr>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Product Category</th>
+        <th>Product Price</th>
+
+    </tr>
+
+
+    <tr *ngFor="let i of lstOfProducts">
+      <td>{{i.proId}}</td>
+      <td>{{i.proName}}</td>
+      <td>{{i.productCatagory}}</td>
+      <td>{{i.porductPrice}}</td>
+    </tr>
+</table>

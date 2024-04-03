@@ -1,0 +1,12 @@
+table{
+    width: 100%;
+
+}
+*{
+    background-color: rgb(231, 228, 224);
+}
+td{
+    text-align: center;
+   background-color: aliceblue;
+   font-size: large; 
+}
